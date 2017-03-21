@@ -106,7 +106,7 @@ func(c *Client) AddExpression(intent, sample string) error {
 	p.Path = "/entities/intent/values/" + intent+"/expressions"
 	p.Data = []byte(data)
 
-	fmt.Println("%v", p)
+	//fmt.Println("%v", p)
 
 	_, err := request(&p)
 	return err
